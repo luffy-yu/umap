@@ -56,3 +56,7 @@ clf_pipeline = GridSearchCV(pipeline, params_grid_pipeline)
 clf_pipeline.fit(X_train, y_train)
 print("Accuracy on the test set with UMAP transformation: {:.3f}".format(
     clf_pipeline.score(X_test, y_test)))
+
+# result
+#Accuracy on the test set with raw data: 0.755
+#Accuracy on the test set with UMAP transformation: 0.930
